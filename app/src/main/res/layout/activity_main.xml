@@ -15,12 +15,13 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
             app:popupTheme="@style/Theme.OVmusicplayer.PopupOverlay" />
 
     </com.google.android.material.appbar.AppBarLayout>
 
     <include layout="@layout/content_main" />
 
-
+    <include
+        android:id="@+id/custome_tab"
+        layout="@layout/custom_tabbar" />
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
