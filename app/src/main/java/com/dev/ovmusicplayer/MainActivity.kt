@@ -1,20 +1,59 @@
 package com.dev.ovmusicplayer
 
+import android.content.res.ColorStateList
+import android.graphics.Color
 import android.os.Bundle
-import com.google.android.material.floatingactionbutton.FloatingActionButton
-import com.google.android.material.snackbar.Snackbar
-import androidx.appcompat.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
+import android.view.animation.AnimationUtils
+import androidx.appcompat.app.AppCompatActivity
+import androidx.navigation.NavController
+import androidx.navigation.findNavController
+import com.dev.ovmusicplayer.databinding.ActivityMainBinding
 
-class MainActivity : AppCompatActivity() {
 
+class MainActivity : AppCompatActivity(), View.OnClickListener {
+    lateinit var binding: ActivityMainBinding
+    var def: ColorStateList? = null
+    var navController: NavController? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        val view = binding.root
+        setContentView(view)
         setSupportActionBar(findViewById(R.id.toolbar))
         supportActionBar?.hide()
+        navController = findNavController(R.id.nav_host_fragment)
+
+        binding.customeTab.item2.setOnClickListener {
+
+            // binding.customeTab.item1.setTextColor(def)
+            binding.customeTab.item2.setTextColor(Color.BLACK)
+            binding.customeTab.item3.setTextColor(Color.BLACK)
+            val size = binding.customeTab.item2.width
+            binding.customeTab.select.animate().x(size.toFloat()).duration = 100
+            navController?.navigate(R.id.SecondFragment)
+        }
+        binding.customeTab.item1.setOnClickListener {
+
+            binding.customeTab.select.animate().x(0F).duration = 100
+            binding.customeTab.item1.setTextColor(Color.BLACK)
+            // binding.customeTab.item2.setTextColor(def)
+            // binding.customeTab.item3.setTextColor(def)
+            navController?.navigate(R.id.FirstFragment)
+        }
+
+        binding.customeTab.item3.setOnClickListener {
+            //  binding.customeTab.item1.setTextColor(def)
+            binding.customeTab.item3.setTextColor(Color.BLACK)
+            //   binding.customeTab.item2.setTextColor(def)
+            val size = binding.customeTab.item2.width * 2
+            binding.customeTab.select.animate().x(size.toFloat()).duration = 100
+            navController?.navigate(R.id.visualizationFragment)
+        }
     }
+
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -29,6 +68,29 @@ class MainActivity : AppCompatActivity() {
         return when (item.itemId) {
             R.id.action_settings -> true
             else -> super.onOptionsItemSelected(item)
+        }
+    }
+
+    override fun onClick(p0: View?) {
+        if (p0?.id == R.id.item1) {
+            binding.customeTab.select.animate().x(0F).duration = 100
+            binding.customeTab.item1.setTextColor(Color.WHITE)
+            binding.customeTab.item2.setTextColor(def)
+            binding.customeTab.item3.setTextColor(def)
+            navController?.navigate(R.id.FirstFragment)
+        } else if (p0?.id == R.id.item2) {
+            binding.customeTab.item1.setTextColor(def)
+            binding.customeTab.item2.setTextColor(Color.WHITE)
+            binding.customeTab.item3.setTextColor(def)
+            val size = binding.customeTab.item2.width
+            binding.customeTab.select.animate().x(size.toFloat()).duration = 100
+            navController?.navigate(R.id.SecondFragment)
+        } else if (p0?.id == R.id.item3) {
+            binding.customeTab.item1.setTextColor(def)
+            binding.customeTab.item3.setTextColor(Color.WHITE)
+            binding.customeTab.item2.setTextColor(def)
+            val size = binding.customeTab.item2.width * 2
+            binding.customeTab.select.animate().x(size.toFloat()).duration = 100
         }
     }
 }

@@ -14,6 +14,9 @@
         <action
             android:id="@+id/action_FirstFragment_to_SecondFragment"
             app:destination="@id/SecondFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_visualizationFragment"
+            app:destination="@id/visualizationFragment" />
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
@@ -23,6 +26,15 @@
 
         <action
             android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/visualizationFragment"
+        android:name="com.dev.ovmusicplayer.ui.visualization.VisualizationFragment"
+        android:label="visualization_fragment"
+        tools:layout="@layout/visualization_fragment" >
+        <action
+            android:id="@+id/action_visualizationFragment_to_FirstFragment"
             app:destination="@id/FirstFragment" />
     </fragment>
 </navigation>
