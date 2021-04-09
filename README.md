@@ -6,11 +6,6 @@ Currently OVmusicplayer contains:
 ### 🖼️ Image loading
 A number of libraries which integrate popular image loading libraries into Jetpack Compose: [Coil](./coil/) and [Glide](./glide/).
 
-## Contributions
-
-Please contribute! We will gladly review any pull requests.
-Make sure to read the [Contributing](CONTRIBUTING.md) page first though.
-
 ### Code style
 
 To maintain the style and quality of the code, are used the bellow static analysis tools. All of them use properly configuration and you find them in the project root directory `.{toolName}`.
@@ -88,3 +83,8 @@ To consult it check this open the project `/docs` directory.
 -   [Spotless](https://github.com/diffplug/spotless) - a code formatter can do more than just find formatting errors.
 -   [SafeArgs](https://developer.android.com/guide/navigation/navigation-pass-data#Safe-args) - generates simple object and builder classes for type-safe navigation and access to any associated arguments.
 -   [Jacoco](https://github.com/jacoco/jacoco) - code coverage library
+
+## Contributions
+
+Please contribute! We will gladly review any pull requests.
+Make sure to read the [Contributing](CONTRIBUTING.md) page first though.
