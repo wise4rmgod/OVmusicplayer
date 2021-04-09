@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".ui.dashboard.MainActivity">
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
@@ -24,4 +24,11 @@
     <include
         android:id="@+id/custome_tab"
         layout="@layout/custom_tabbar" />
+
+    <include
+        layout="@layout/custom_player_control_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="80dp" />
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

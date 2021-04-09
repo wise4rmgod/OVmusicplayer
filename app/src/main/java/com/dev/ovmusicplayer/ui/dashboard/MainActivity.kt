@@ -1,19 +1,18 @@
-package com.dev.ovmusicplayer
+package com.dev.ovmusicplayer.ui.dashboard
 
 import android.content.res.ColorStateList
 import android.graphics.Color
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
-import android.view.View
-import android.view.animation.AnimationUtils
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
+import com.dev.ovmusicplayer.R
 import com.dev.ovmusicplayer.databinding.ActivityMainBinding
 
 
-class MainActivity : AppCompatActivity(), View.OnClickListener {
+class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
     var def: ColorStateList? = null
     var navController: NavController? = null
@@ -71,26 +70,4 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         }
     }
 
-    override fun onClick(p0: View?) {
-        if (p0?.id == R.id.item1) {
-            binding.customeTab.select.animate().x(0F).duration = 100
-            binding.customeTab.item1.setTextColor(Color.WHITE)
-            binding.customeTab.item2.setTextColor(def)
-            binding.customeTab.item3.setTextColor(def)
-            navController?.navigate(R.id.FirstFragment)
-        } else if (p0?.id == R.id.item2) {
-            binding.customeTab.item1.setTextColor(def)
-            binding.customeTab.item2.setTextColor(Color.WHITE)
-            binding.customeTab.item3.setTextColor(def)
-            val size = binding.customeTab.item2.width
-            binding.customeTab.select.animate().x(size.toFloat()).duration = 100
-            navController?.navigate(R.id.SecondFragment)
-        } else if (p0?.id == R.id.item3) {
-            binding.customeTab.item1.setTextColor(def)
-            binding.customeTab.item3.setTextColor(Color.WHITE)
-            binding.customeTab.item2.setTextColor(def)
-            val size = binding.customeTab.item2.width * 2
-            binding.customeTab.select.animate().x(size.toFloat()).duration = 100
-        }
-    }
 }

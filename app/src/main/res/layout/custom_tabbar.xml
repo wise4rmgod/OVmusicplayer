@@ -23,18 +23,21 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:elevation="10dp"
                 android:background="@drawable/back_select"
                 android:text="" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:elevation="10dp"
                 android:layout_weight="1"
                 android:text="" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:elevation="10dp"
                 android:layout_weight="1"
                 android:text="" />
         </LinearLayout>

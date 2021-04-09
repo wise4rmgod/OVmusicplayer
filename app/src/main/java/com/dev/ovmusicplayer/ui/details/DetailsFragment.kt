@@ -1,27 +1,30 @@
 package com.dev.ovmusicplayer.ui.details
 
+
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
-import androidx.navigation.fragment.findNavController
-import com.dev.ovmusicplayer.R
+import androidx.fragment.app.Fragment
+import com.dev.ovmusicplayer.databinding.FragmentDetailsBinding
+import com.google.android.exoplayer2.Player
 
 
-class DetailsFragment : Fragment() {
+class DetailsFragment : Fragment(), Player.EventListener {
+    lateinit var binding: FragmentDetailsBinding
+    private var sampleUrl =
+        "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
 
     override fun onCreateView(
-            inflater: LayoutInflater, container: ViewGroup?,
-            savedInstanceState: Bundle?
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_details, container, false)
+        binding = FragmentDetailsBinding.inflate(inflater, container, false)
+
+        return binding.root
+        //inflater.inflate(R.layout.fragment_details, container, false)
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
 
-    }
 }
