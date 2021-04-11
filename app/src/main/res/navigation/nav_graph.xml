@@ -37,4 +37,13 @@
             android:id="@+id/action_visualizationFragment_to_FirstFragment"
             app:destination="@id/FirstFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/playListFragment"
+        android:name="com.dev.ovmusicplayer.ui.playlist.PlayListFragment"
+        android:label="play_list_fragment"
+        tools:layout="@layout/play_list_fragment" >
+        <action
+            android:id="@+id/action_playListFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
 </navigation>

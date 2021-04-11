@@ -23,12 +23,45 @@
 
     <include
         android:id="@+id/custome_tab"
-        layout="@layout/custom_tabbar" />
+        layout="@layout/custom_tabbar"
+        />
 
     <include
+        android:id="@+id/ov_buttons"
         layout="@layout/custom_player_control_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
         android:layout_marginBottom="80dp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/upnext_menubottom"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/transparentbottomcard"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:id="@+id/upnext_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:text="Up Next: All the way up"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/upnext_btn"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/ic_caret_up_circle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

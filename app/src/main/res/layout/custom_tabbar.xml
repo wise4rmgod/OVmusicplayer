@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/custom_tabbar_layout"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
@@ -23,22 +24,22 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:elevation="10dp"
                 android:background="@drawable/back_select"
+                android:elevation="10dp"
                 android:text="" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:elevation="10dp"
                 android:layout_weight="1"
+                android:elevation="10dp"
                 android:text="" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:elevation="10dp"
                 android:layout_weight="1"
+                android:elevation="10dp"
                 android:text="" />
         </LinearLayout>
 

@@ -16,7 +16,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@id/exo_position"
+            android:id="@+id/ov_starttime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:includeFontPadding="false"
@@ -26,14 +26,14 @@
             android:textSize="14sp"
             android:textStyle="bold" />
 
-        <View
-            android:id="@id/exo_progress_placeholder"
+        <SeekBar
+            android:id="@+id/ov_seekbar"
             android:layout_width="0dp"
             android:layout_height="26dp"
             android:layout_weight="1" />
 
         <TextView
-            android:id="@id/exo_duration"
+            android:id="@+id/ov_endtime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:includeFontPadding="false"
@@ -55,13 +55,14 @@
         app:layout_constraintTop_toBottomOf="@id/exopos">
 
         <ImageView
-            android:id="@id/exo_pause"
+            android:id="@+id/ov_skipback"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:src="@drawable/ic_vectorplayback" />
 
         <ImageView
+            android:id="@+id/ov_rewind"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
@@ -69,18 +70,29 @@
 
 
         <ImageView
+            android:id="@+id/ov_play"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:src="@drawable/ic_vectorplay" />
 
         <ImageView
+            android:id="@+id/ov_pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/ic_vectorpause"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/ov_forward"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:src="@drawable/ic_vectorskipforward" />
 
         <ImageView
+            android:id="@+id/ov_skipnext"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
