@@ -1,4 +1,9 @@
 package com.dev.ovmusicplayer.repository
 
-class PlayListRepository {
+import com.dev.ovmusicplayer.db.AppDatabase
+
+class PlayListRepository(appDatabase: AppDatabase) {
+    private val playlistDAO = appDatabase.playlistdao()
+
+    fun getplaylist() = playlistDAO.showallplaylist()
 }
