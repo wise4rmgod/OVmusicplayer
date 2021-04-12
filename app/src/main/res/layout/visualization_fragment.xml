@@ -31,4 +31,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textview_first" />
 
+    <com.gauravk.audiovisualizer.visualizer.BlastVisualizer xmlns:custom="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/blast"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        custom:avColor="@color/av_dark_blue"
+        custom:avDensity="0.8"
+        custom:avSpeed="normal"
+        custom:avType="fill"
+        custom:layout_constraintBottom_toBottomOf="parent"
+        custom:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

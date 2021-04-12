@@ -57,7 +57,7 @@ dependencies {
     implementation 'com.google.android.exoplayer:exoplayer-ui:2.12.2'
     // audio visualizer
     compile 'com.chibde:audiovisualizer:2.2.0'
-
+    implementation 'com.gauravk.audiovisualizer:audiovisualizer:0.9.2'
     // lyrics viewer
     compile 'com.github.zhengken:LyricViewDemo:v1.2'
 
