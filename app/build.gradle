@@ -58,6 +58,9 @@ dependencies {
     // audio visualizer
     compile 'com.chibde:audiovisualizer:2.2.0'
 
+    // lyrics viewer
+    compile 'com.github.zhengken:LyricViewDemo:v1.2'
+
     // Activity Ktx for by viewModels()
     implementation "androidx.activity:activity-ktx:1.2.2"
 

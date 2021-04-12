@@ -45,6 +45,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <me.zhengken.lyricview.LyricView
+            android:id="@+id/custom_lyric_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
     </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
