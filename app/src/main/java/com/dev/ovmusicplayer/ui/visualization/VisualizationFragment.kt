@@ -48,4 +48,9 @@ class VisualizationFragment : Fragment() {
             PERMISSION_REQUEST_CODE
         )
     }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        binding.blast.release()
+    }
 }

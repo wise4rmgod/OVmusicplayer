@@ -28,7 +28,6 @@ class LyricsFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         binding = FragmentLyricsBinding.inflate(inflater, container, false)
-
         // Request permission from Android local storage access
         requestPermission()
 

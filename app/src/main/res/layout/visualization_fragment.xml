@@ -31,11 +31,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textview_first" />
 
-    <com.gauravk.audiovisualizer.visualizer.BlastVisualizer xmlns:custom="http://schemas.android.com/apk/res-auto"
+    <com.gauravk.audiovisualizer.visualizer.CircleLineVisualizer xmlns:custom="http://schemas.android.com/apk/res-auto"
         android:id="@+id/blast"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        custom:avColor="@color/av_dark_blue"
+        android:layout_height="300dp"
+        custom:avColor="@color/white"
         custom:avDensity="0.8"
         custom:avSpeed="normal"
         custom:avType="fill"

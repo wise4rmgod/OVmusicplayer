@@ -1,4 +1,7 @@
 package com.dev.ovmusicplayer
 
-class MyApplication {
-}
+import android.app.Application
+import dagger.hilt.android.HiltAndroidApp
+
+@HiltAndroidApp
+class MyApplication : Application()

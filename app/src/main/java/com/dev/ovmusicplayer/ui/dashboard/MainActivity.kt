@@ -7,18 +7,21 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.SeekBar
+import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
 import com.dev.ovmusicplayer.R
 import com.dev.ovmusicplayer.databinding.ActivityMainBinding
 import com.dev.ovmusicplayer.util.MediaPlayerMix
+import dagger.hilt.android.AndroidEntryPoint
 import java.util.concurrent.TimeUnit
 
-
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
     var navController: NavController? = null
+    val mainactivityViewmodel: MainActivity_Viewmodel by viewModels()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -29,8 +32,12 @@ class MainActivity : AppCompatActivity() {
         navController = findNavController(R.id.nav_host_fragment)
 
         // call the mediaplayer object
-        MediaPlayerMix.mPlayer = MediaPlayer.create(this, R.raw.higher)
+        MediaPlayerMix.mPlayer = MediaPlayer.create(this, R.raw.dmxslippin)
         //
+
+        // auto create songs from local db
+       // run_saveSongsFromDb()
+
         MediaPlayerMix.updateSongTime(
             binding.ovButtons.ovSeekbar,
             binding.ovButtons.ovStarttime
@@ -119,6 +126,10 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+    fun run_saveSongsFromDb() {
+        mainactivityViewmodel.add()
+
+    }
 
     fun details_animation() {
         binding.customeTab.select.animate().x(0F).duration = 100
