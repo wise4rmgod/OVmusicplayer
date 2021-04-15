@@ -1,7 +1,7 @@
 # OVmusicplayer
 OVmusicplayer is a music application.
 
-Currently OVmusicplayer contains:
+## Currently OVmusicplayer contains:
 
 ### 🖼️ Image loading
 A number of libraries which integrate popular image loading libraries into Jetpack Compose: [Coil](./coil/) and [Glide](./glide/).
