@@ -1,16 +1,21 @@
 package com.dev.ovmusicplayer.util
 
 import android.content.Context
+import android.media.AudioManager
 import android.media.MediaPlayer
+import android.os.Environment
 import android.os.Handler
 import android.view.View
 import android.widget.ImageView
 import android.widget.SeekBar
 import android.widget.TextView
 import android.widget.Toast
+import androidx.core.net.toUri
 import androidx.navigation.NavController
 import com.dev.ovmusicplayer.R
-import java.util.*
+import java.io.File
+import java.io.IOException
+import java.util.Calendar.SECOND
 import java.util.concurrent.TimeUnit
 
 object MediaPlayerMix {
@@ -21,6 +26,7 @@ object MediaPlayerMix {
     private var fTime: Int = 5000
     private var bTime: Int = 5000
     private val hdlr: Handler = Handler()
+    private var runnable: Runnable? = null
 
     fun play(
         seekBar: SeekBar?,
@@ -29,6 +35,12 @@ object MediaPlayerMix {
         pausebtn: ImageView?,
         playbtn: ImageView?
     ) {
+        val audioUrl = "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+        val fileName = "Speechless" + ".mp3"
+        val songlocationFile: File = File(
+            Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS)
+                .toString() + "/" + fileName
+        )
 
         mPlayer?.start()
         eTime = mPlayer?.duration?.toLong()!!.toInt()
@@ -146,6 +158,31 @@ object MediaPlayerMix {
         start_time: TextView?
     ) {
 
+    }
+
+    private fun timeInString(seconds: Int): String {
+        return String.format(
+            "%02d:%02d",
+            (seconds / 3600 * 60 + ((seconds % 3600) / 60)),
+            (seconds % 60)
+        )
+    }
+
+    fun updateSeekBar(
+        seekBar: SeekBar?,
+        start_time: TextView?
+    ) {
+        runnable = Runnable {
+            start_time?.text = String.format(
+                "%d min, %d sec", TimeUnit.MILLISECONDS.toMinutes(sTime.toLong()),
+                TimeUnit.MILLISECONDS.toSeconds(sTime.toLong()) - TimeUnit.MINUTES.toSeconds(
+                    TimeUnit.MILLISECONDS.toMinutes(sTime.toLong())
+                )
+            )
+            seekBar?.progress = mPlayer?.currentPosition?.div(SECOND)!!
+            runnable?.let { hdlr.postDelayed(it, SECOND.toLong()) }
+        }
+        hdlr.postDelayed(runnable!!, SECOND.toLong())
     }
 
     class upd {

@@ -2,26 +2,33 @@ package com.dev.ovmusicplayer.ui.dashboard
 
 import android.content.res.ColorStateList
 import android.graphics.Color
+import android.graphics.drawable.Drawable
+import android.media.AudioAttributes
 import android.media.MediaPlayer
+import android.net.Uri
 import android.os.Bundle
+import android.os.Environment
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.SeekBar
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.net.toFile
+import androidx.core.net.toUri
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
 import com.dev.ovmusicplayer.R
 import com.dev.ovmusicplayer.databinding.ActivityMainBinding
 import com.dev.ovmusicplayer.util.MediaPlayerMix
 import dagger.hilt.android.AndroidEntryPoint
+import java.io.File
 import java.util.concurrent.TimeUnit
 
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
     var navController: NavController? = null
-    val mainactivityViewmodel: MainActivity_Viewmodel by viewModels()
+    val viewmodel: MainActivity_Viewmodel by viewModels()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -31,23 +38,11 @@ class MainActivity : AppCompatActivity() {
         supportActionBar?.hide()
         navController = findNavController(R.id.nav_host_fragment)
 
-        // call the mediaplayer object
-        MediaPlayerMix.mPlayer = MediaPlayer.create(this, R.raw.dmxslippin)
-        //
-
         // auto create songs from local db
-       // run_saveSongsFromDb()
+        // to add songs to the local database, uncomment this code
+        // run_saveSongsFromDb()
 
-        MediaPlayerMix.updateSongTime(
-            binding.ovButtons.ovSeekbar,
-            binding.ovButtons.ovStarttime
-        )
-
-        // get the update of seekbar
-        val upt = MediaPlayerMix.upd()
-        upt.seekBar = binding.ovButtons.ovSeekbar
-        upt.start_time = binding.ovButtons.ovStarttime
-        upt.updateSongTime
+        MediaPlayerMix.mPlayer = MediaPlayer.create(this, R.raw.dmxslippin)
 
         binding.ovButtons.ovPlay.setOnClickListener {
             MediaPlayerMix.play(
@@ -57,6 +52,7 @@ class MainActivity : AppCompatActivity() {
                 binding.ovButtons.ovPause,
                 binding.ovButtons.ovPlay
             )
+
         }
 
         binding.ovButtons.ovPause.setOnClickListener {
@@ -127,7 +123,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun run_saveSongsFromDb() {
-        mainactivityViewmodel.add()
+        viewmodel.add()
 
     }
 
@@ -157,6 +153,8 @@ class MainActivity : AppCompatActivity() {
 
     override fun onStop() {
         super.onStop()
+        MediaPlayerMix.mPlayer?.stop()
+        MediaPlayerMix.mPlayer?.reset()
         MediaPlayerMix.mPlayer?.release()
     }
 

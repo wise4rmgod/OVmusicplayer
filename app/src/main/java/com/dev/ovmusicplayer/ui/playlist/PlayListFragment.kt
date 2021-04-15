@@ -1,6 +1,7 @@
 package com.dev.ovmusicplayer.ui.playlist
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -31,10 +32,10 @@ class PlayListFragment : Fragment() {
 
         viewModel.getPlayList()
         viewModel.list.observe(viewLifecycleOwner, Observer {
-            binding.recyclePlaylist.adapter =
+            Log.d("Playlist", it.toString())
+            binding.recycleplay.adapter =
                 PlaylistAdapter(
-                    it as List<OVMedia>,
-                    activity?.applicationContext!!
+                    it as ArrayList<OVMedia>
                 )
         })
         binding.playlistClosebtn.setOnClickListener {

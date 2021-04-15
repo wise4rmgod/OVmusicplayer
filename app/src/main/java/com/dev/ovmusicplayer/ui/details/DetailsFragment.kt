@@ -13,8 +13,7 @@ import com.google.android.exoplayer2.Player
 
 class DetailsFragment : Fragment(), Player.EventListener {
     lateinit var binding: FragmentDetailsBinding
-    private var sampleUrl =
-        "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

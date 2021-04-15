@@ -1,4 +1,6 @@
 package com.dev.ovmusicplayer.ui.details
 
-class DetailsViewModel {
+import androidx.lifecycle.ViewModel
+
+class DetailsViewModel : ViewModel() {
 }
