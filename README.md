@@ -10,12 +10,11 @@ A number of libraries which integrate popular image loading libraries into Jetpa
 
 To maintain the style and quality of the code, are used the bellow static analysis tools. All of them use properly configuration and you find them in the project root directory `.{toolName}`.
 
-| Tools                                                   | Config file                                                                       | Check command             | Fix command               |
-|---------------------------------------------------------|----------------------------------------------------------------------------------:|---------------------------|---------------------------|
-| [detekt](https://github.com/arturbosch/detekt)          | [/.detekt](https://github.com/VMadalin/kotlin-sample-app/tree/master/.detekt)     | `./gradlew detekt`        | -                         |
-| [ktlint](https://github.com/pinterest/ktlint)           | -                                                                                 | `./gradlew ktlint`        | `./gradlew ktlintFormat`  |
-| [spotless](https://github.com/diffplug/spotless)        | [/.spotless](https://github.com/VMadalin/kotlin-sample-app/tree/master/.spotless) | `./gradlew spotlessCheck` | `./gradlew spotlessApply` |
-| [lint](https://developer.android.com/studio/write/lint) | [/.lint](https://github.com/VMadalin/kotlin-sample-app/tree/master/.lint)         | `./gradlew lint`          | -                         |
+| Tools                                                   | Check Command                                                             
+| [detekt](https://github.com/arturbosch/detekt)          |  `./gradlew detekt`        | -                         |
+| [ktlint](https://github.com/pinterest/ktlint)           |  `./gradlew ktlint`        | `./gradlew ktlintFormat`  |
+| [spotless](https://github.com/diffplug/spotless)        |  `./gradlew spotlessCheck` | `./gradlew spotlessApply` |
+| [lint](https://developer.android.com/studio/write/lint) |  `./gradlew lint`          | -                         |
 
 ## Design
 
@@ -56,6 +55,7 @@ To consult it check this open the project `/docs` directory.
     -   [Android KTX](https://developer.android.com/kotlin/ktx.html) - provide concise, idiomatic Kotlin to Jetpack and Android platform APIs.
     -   [AndroidX](https://developer.android.com/jetpack/androidx) - major improvement to the original Android [Support Library](https://developer.android.com/topic/libraries/support-library/index), which is no longer maintained.
     -   [Benchmark](https://developer.android.com/studio/profile/benchmark.html) - handles warmup, measures your code performance, and outputs benchmarking results to the Android Studio console.
+    -   [LyricView](https://github.com/zhengken/LyricViewDemo) - LyricView is a powerful and flexible custom view to display lyrics within music player under Android
     -   [View Binding](https://developer.android.com/topic/libraries/data-binding/) - allows you to bind UI components in your layouts to data sources in your app using a declarative format rather than programmatically.
     -   [Lifecycle](https://developer.android.com/topic/libraries/architecture/lifecycle) - perform actions in response to a change in the lifecycle status of another component, such as activities and fragments.
     -   [LiveData](https://developer.android.com/topic/libraries/architecture/livedata) - lifecycle-aware, meaning it respects the lifecycle of other app components, such as activities, fragments, or services.
@@ -69,7 +69,6 @@ To consult it check this open the project `/docs` directory.
 
 ### Test dependencies
 
--   [UIAutomator](https://developer.android.com/training/testing/ui-automator) - a UI testing framework suitable for cross-app functional UI testing across system and installed apps.
 -   [Espresso](https://developer.android.com/training/testing/espresso) - to write concise, beautiful, and reliable Android UI tests
 -   [Robolectric](https://github.com/robolectric/robolectric) - industry-standard unit testing framework for Android.
 -   [JUnit](https://github.com/junit-team/junit4) - a simple framework to write repeatable tests. It is an instance of the xUnit architecture for unit testing frameworks.
