@@ -13,6 +13,7 @@ import org.junit.Before
 import org.junit.Test
 
 import org.junit.Assert.*
+import org.junit.Rule
 import org.junit.runner.RunWith
 import java.io.IOException
 
@@ -44,6 +45,7 @@ class AppDatabaseTest {
 
     @Test
     fun addSongs() = runBlocking {
+
         val addsong = OVMedia(
             1, "john", "joli", "madli",
             "1998", "devicestorage", "joli lyrics"
@@ -53,14 +55,18 @@ class AppDatabaseTest {
         assertNotNull("this onject is not null", you)
     }
 
-    @Test
+   // @Test
     fun getPlaylist() {
 
        // val getp = playlistDao.showallplaylist()
         playListRepository.getplaylist()
-        playListViewModel.list.observeForever {
-            assertNull(it)
+        runBlocking {
+            this.coroutineContext
+            playListViewModel.list.observeForever {
+                assertNull(it)
+            }
         }
+
        // assertNotNull(getp)
         // assertSame("expect a list of value", playlist_songs, getp)
     }

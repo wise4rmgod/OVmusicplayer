@@ -12,8 +12,7 @@ data class OVMedia(
     var album_art: String? = null,
     var song_year: String? = null,
     var song_location: String? = null,
-    var lyrics_name: String? = null,
-    var lyrics_nam: String? = null
+    var lyrics_name: String? = null
 
 )
 
