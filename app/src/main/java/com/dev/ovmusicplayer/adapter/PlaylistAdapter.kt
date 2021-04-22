@@ -39,7 +39,6 @@ class PlaylistAdapter(
         val dataModel = dataList.get(position)
 
 
-
         holder.artist_name.text = dataModel.artist_name
         holder.song_title.text = dataModel.track_name
         dataModel.album_art?.let {
@@ -48,7 +47,7 @@ class PlaylistAdapter(
                 Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS)
                     .toString() + "/" + fileName
             )
-            holder.album_image.load(imglocationFile.absoluteFile)
+            holder.album_image.load(File(imglocationFile.path))
         }
 
         holder.itemView.setOnClickListener {

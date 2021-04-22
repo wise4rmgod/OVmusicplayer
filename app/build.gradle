@@ -4,6 +4,24 @@ plugins {
     id 'androidx.navigation.safeargs.kotlin'
     id 'kotlin-kapt'
     id 'dagger.hilt.android.plugin'
+    id("io.gitlab.arturbosch.detekt").version("1.16.0")
+}
+
+detekt {
+    buildUponDefaultConfig = true // preconfigure defaults
+    allRules = false // activate all available (even unstable) rules.
+   // config = files("$projectDir/config/detekt.yml")
+    // point to your custom config defining rules to run, overwriting default behavior
+
+
+    reports {
+        html.enabled = true // observe findings in your browser with structure and code snippets
+        xml.enabled = true // checkstyle like format mainly for integrations like Jenkins
+        txt.enabled = true
+        // similar to the console output, contains issue signature to manually edit baseline files
+        sarif.enabled = true
+        // standardized SARIF format (https://sarifweb.azurewebsites.net/) to support integrations with Github Code Scanning
+    }
 }
 
 android {
@@ -42,6 +60,7 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+
 }
 
 dependencies {
@@ -94,6 +113,8 @@ dependencies {
     kapt "com.google.dagger:hilt-android-compiler:$hilt_version"
     implementation "androidx.hilt:hilt-lifecycle-viewmodel:$hilt_jetpack"
     kapt "androidx.hilt:hilt-compiler:$hilt_jetpack"
+    // Detekt
+    detektPlugins "io.gitlab.arturbosch.detekt:detekt-formatting:1.16.0"
 
     //Test
     testImplementation "org.mockito:mockito-core:3.4.6"
