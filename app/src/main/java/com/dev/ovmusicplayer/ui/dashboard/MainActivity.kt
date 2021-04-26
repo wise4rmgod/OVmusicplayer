@@ -176,7 +176,7 @@ class MainActivity : AppCompatActivity() {
         } catch (e: IOException) {
             e.printStackTrace()
         }
-        Toast.makeText(this, "Audio started playing..", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "Audio started playing.", Toast.LENGTH_SHORT).show()
     }
 
 }
