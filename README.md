@@ -1,6 +1,8 @@
 # OVmusicplayer
 OVmusicplayer is a music application that shows lyrics of your music.
 
+![ovmedia](https://res.cloudinary.com/wise4rmgod/image/upload/v1619419751/Screenshot_2021-04-26_at_07.47.52.png)
+
 ### Code style
 
 To maintain the style and quality of the code, are used the bellow static analysis tools. All of them use properly configuration and you find them in the project root directory `.{toolName}`.
@@ -61,6 +63,9 @@ To consult it check this open the project `/docs` directory.
 -   [Hilt](https://dagger.dev/) - dependency injector for replacement all FactoryFactory classes.
 -   [Retrofit](https://square.github.io/retrofit/) - type-safe HTTP client.
 -   [Coil](https://github.com/coil-kt/coil) - image loading library for Android backed by Kotlin Coroutines.
+-   [Firebase Cloud firestore](https://github.com/coil-kt/coil) - image loading library for Android backed by Kotlin Coroutines.
+-   [Firebase Crashlytics](https://github.com/coil-kt/coil) - image loading library for Android backed by Kotlin Coroutines.
+-   [Firebase TestLab](https://github.com/coil-kt/coil) - image loading library for Android backed by Kotlin Coroutines.
 
 ### Test dependencies
 
