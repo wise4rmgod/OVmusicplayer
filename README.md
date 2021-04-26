@@ -66,6 +66,7 @@ To consult it check this open the project `/docs` directory.
 -   [Firebase Cloud firestore](https://github.com/coil-kt/coil) - image loading library for Android backed by Kotlin Coroutines.
 -   [Firebase Crashlytics](https://github.com/coil-kt/coil) - image loading library for Android backed by Kotlin Coroutines.
 -   [Firebase TestLab](https://github.com/coil-kt/coil) - image loading library for Android backed by Kotlin Coroutines.
+-   [CodeCov](https://github.com/coil-kt/coil) - image loading library for Android backed by Kotlin Coroutines.
 
 ### Test dependencies
 
