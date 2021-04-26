@@ -1,0 +1,17 @@
+$dokka.format:javadoc-v1
+$dokka.linkExtension:html
+$dokka.location:com.dev.ovmusicplayer.adapter/PlaylistAdapter.ViewHolder///PointingToDeclaration/com/dev/ovmusicplayer/adapter/PlaylistAdapter.ViewHolder.html
+$dokka.location:com.dev.ovmusicplayer.util/MediaPlayerMix.upd///PointingToDeclaration/com/dev/ovmusicplayer/util/MediaPlayerMix.upd.html
+com.dev.ovmusicplayer
+com.dev.ovmusicplayer.adapter
+com.dev.ovmusicplayer.db
+com.dev.ovmusicplayer.di
+com.dev.ovmusicplayer.model
+com.dev.ovmusicplayer.repository
+com.dev.ovmusicplayer.ui.dashboard
+com.dev.ovmusicplayer.ui.details
+com.dev.ovmusicplayer.ui.lyrics
+com.dev.ovmusicplayer.ui.playlist
+com.dev.ovmusicplayer.ui.visualization
+com.dev.ovmusicplayer.util
+

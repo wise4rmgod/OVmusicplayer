@@ -1,0 +1,133 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:com.dev.ovmusicplayer.adapter////PointingToDeclaration/app/com.dev.ovmusicplayer.adapter/index.html
+$dokka.location:com.dev.ovmusicplayer.adapter/PlaylistAdapter.ViewHolder///PointingToDeclaration/app/com.dev.ovmusicplayer.adapter/-playlist-adapter/-view-holder/index.html
+$dokka.location:com.dev.ovmusicplayer.adapter/PlaylistAdapter.ViewHolder/ViewHolder/#ListPlaylistBinding/PointingToDeclaration/app/com.dev.ovmusicplayer.adapter/-playlist-adapter/-view-holder/-view-holder.html
+$dokka.location:com.dev.ovmusicplayer.adapter/PlaylistAdapter.ViewHolder/album_image/#/PointingToDeclaration/app/com.dev.ovmusicplayer.adapter/-playlist-adapter/-view-holder/album_image.html
+$dokka.location:com.dev.ovmusicplayer.adapter/PlaylistAdapter.ViewHolder/artist_name/#/PointingToDeclaration/app/com.dev.ovmusicplayer.adapter/-playlist-adapter/-view-holder/artist_name.html
+$dokka.location:com.dev.ovmusicplayer.adapter/PlaylistAdapter.ViewHolder/song_title/#/PointingToDeclaration/app/com.dev.ovmusicplayer.adapter/-playlist-adapter/-view-holder/song_title.html
+$dokka.location:com.dev.ovmusicplayer.adapter/PlaylistAdapter///PointingToDeclaration/app/com.dev.ovmusicplayer.adapter/-playlist-adapter/index.html
+$dokka.location:com.dev.ovmusicplayer.adapter/PlaylistAdapter/PlaylistAdapter/#kotlin.collections.List[com.dev.ovmusicplayer.model.OVMedia]/PointingToDeclaration/app/com.dev.ovmusicplayer.adapter/-playlist-adapter/-playlist-adapter.html
+$dokka.location:com.dev.ovmusicplayer.adapter/PlaylistAdapter/getItemCount/#/PointingToDeclaration/app/com.dev.ovmusicplayer.adapter/-playlist-adapter/get-item-count.html
+$dokka.location:com.dev.ovmusicplayer.adapter/PlaylistAdapter/onBindViewHolder/#com.dev.ovmusicplayer.adapter.PlaylistAdapter.ViewHolder#kotlin.Int/PointingToDeclaration/app/com.dev.ovmusicplayer.adapter/-playlist-adapter/on-bind-view-holder.html
+$dokka.location:com.dev.ovmusicplayer.adapter/PlaylistAdapter/onCreateViewHolder/#android.view.ViewGroup#kotlin.Int/PointingToDeclaration/app/com.dev.ovmusicplayer.adapter/-playlist-adapter/on-create-view-holder.html
+$dokka.location:com.dev.ovmusicplayer.db////PointingToDeclaration/app/com.dev.ovmusicplayer.db/index.html
+$dokka.location:com.dev.ovmusicplayer.db/AppDatabase///PointingToDeclaration/app/com.dev.ovmusicplayer.db/-app-database/index.html
+$dokka.location:com.dev.ovmusicplayer.db/AppDatabase/AppDatabase/#/PointingToDeclaration/app/com.dev.ovmusicplayer.db/-app-database/-app-database.html
+$dokka.location:com.dev.ovmusicplayer.db/AppDatabase/playlistdao/#/PointingToDeclaration/app/com.dev.ovmusicplayer.db/-app-database/playlistdao.html
+$dokka.location:com.dev.ovmusicplayer.db/PlayListDAO///PointingToDeclaration/app/com.dev.ovmusicplayer.db/-play-list-d-a-o/index.html
+$dokka.location:com.dev.ovmusicplayer.db/PlayListDAO/delete/#com.dev.ovmusicplayer.model.OVMedia/PointingToDeclaration/app/com.dev.ovmusicplayer.db/-play-list-d-a-o/delete.html
+$dokka.location:com.dev.ovmusicplayer.db/PlayListDAO/insert/#com.dev.ovmusicplayer.model.OVMedia?/PointingToDeclaration/app/com.dev.ovmusicplayer.db/-play-list-d-a-o/insert.html
+$dokka.location:com.dev.ovmusicplayer.db/PlayListDAO/showallplaylist/#/PointingToDeclaration/app/com.dev.ovmusicplayer.db/-play-list-d-a-o/showallplaylist.html
+$dokka.location:com.dev.ovmusicplayer.di////PointingToDeclaration/app/com.dev.ovmusicplayer.di/index.html
+$dokka.location:com.dev.ovmusicplayer.di/DatabaseModule///PointingToDeclaration/app/com.dev.ovmusicplayer.di/-database-module/index.html
+$dokka.location:com.dev.ovmusicplayer.di/DatabaseModule/provideDatabase/#android.content.Context/PointingToDeclaration/app/com.dev.ovmusicplayer.di/-database-module/provide-database.html
+$dokka.location:com.dev.ovmusicplayer.di/DatabaseModule/provideLogDao/#com.dev.ovmusicplayer.db.AppDatabase/PointingToDeclaration/app/com.dev.ovmusicplayer.di/-database-module/provide-log-dao.html
+$dokka.location:com.dev.ovmusicplayer.model////PointingToDeclaration/app/com.dev.ovmusicplayer.model/index.html
+$dokka.location:com.dev.ovmusicplayer.model/OVMedia///PointingToDeclaration/app/com.dev.ovmusicplayer.model/-o-v-media/index.html
+$dokka.location:com.dev.ovmusicplayer.model/OVMedia/OVMedia/#kotlin.Int?#kotlin.String?#kotlin.String?#kotlin.String?#kotlin.String?#kotlin.String?#kotlin.String?/PointingToDeclaration/app/com.dev.ovmusicplayer.model/-o-v-media/-o-v-media.html
+$dokka.location:com.dev.ovmusicplayer.model/OVMedia/album_art/#/PointingToDeclaration/app/com.dev.ovmusicplayer.model/-o-v-media/album_art.html
+$dokka.location:com.dev.ovmusicplayer.model/OVMedia/artist_name/#/PointingToDeclaration/app/com.dev.ovmusicplayer.model/-o-v-media/artist_name.html
+$dokka.location:com.dev.ovmusicplayer.model/OVMedia/id/#/PointingToDeclaration/app/com.dev.ovmusicplayer.model/-o-v-media/id.html
+$dokka.location:com.dev.ovmusicplayer.model/OVMedia/lyrics_name/#/PointingToDeclaration/app/com.dev.ovmusicplayer.model/-o-v-media/lyrics_name.html
+$dokka.location:com.dev.ovmusicplayer.model/OVMedia/song_location/#/PointingToDeclaration/app/com.dev.ovmusicplayer.model/-o-v-media/song_location.html
+$dokka.location:com.dev.ovmusicplayer.model/OVMedia/song_year/#/PointingToDeclaration/app/com.dev.ovmusicplayer.model/-o-v-media/song_year.html
+$dokka.location:com.dev.ovmusicplayer.model/OVMedia/track_name/#/PointingToDeclaration/app/com.dev.ovmusicplayer.model/-o-v-media/track_name.html
+$dokka.location:com.dev.ovmusicplayer.repository////PointingToDeclaration/app/com.dev.ovmusicplayer.repository/index.html
+$dokka.location:com.dev.ovmusicplayer.repository/AddSongDetailRepository///PointingToDeclaration/app/com.dev.ovmusicplayer.repository/-add-song-detail-repository/index.html
+$dokka.location:com.dev.ovmusicplayer.repository/AddSongDetailRepository/AddSongDetailRepository/#com.dev.ovmusicplayer.db.AppDatabase/PointingToDeclaration/app/com.dev.ovmusicplayer.repository/-add-song-detail-repository/-add-song-detail-repository.html
+$dokka.location:com.dev.ovmusicplayer.repository/AddSongDetailRepository/addPlaylist/#com.dev.ovmusicplayer.model.OVMedia?/PointingToDeclaration/app/com.dev.ovmusicplayer.repository/-add-song-detail-repository/add-playlist.html
+$dokka.location:com.dev.ovmusicplayer.repository/DetailsRepository///PointingToDeclaration/app/com.dev.ovmusicplayer.repository/-details-repository/index.html
+$dokka.location:com.dev.ovmusicplayer.repository/DetailsRepository/DetailsRepository/#com.dev.ovmusicplayer.db.AppDatabase/PointingToDeclaration/app/com.dev.ovmusicplayer.repository/-details-repository/-details-repository.html
+$dokka.location:com.dev.ovmusicplayer.repository/DetailsRepository/showdetails/#/PointingToDeclaration/app/com.dev.ovmusicplayer.repository/-details-repository/showdetails.html
+$dokka.location:com.dev.ovmusicplayer.repository/PlayListRepository///PointingToDeclaration/app/com.dev.ovmusicplayer.repository/-play-list-repository/index.html
+$dokka.location:com.dev.ovmusicplayer.repository/PlayListRepository/PlayListRepository/#com.dev.ovmusicplayer.db.AppDatabase/PointingToDeclaration/app/com.dev.ovmusicplayer.repository/-play-list-repository/-play-list-repository.html
+$dokka.location:com.dev.ovmusicplayer.repository/PlayListRepository/getplaylist/#/PointingToDeclaration/app/com.dev.ovmusicplayer.repository/-play-list-repository/getplaylist.html
+$dokka.location:com.dev.ovmusicplayer.ui.dashboard////PointingToDeclaration/app/com.dev.ovmusicplayer.ui.dashboard/index.html
+$dokka.location:com.dev.ovmusicplayer.ui.dashboard/MainActivity///PointingToDeclaration/app/com.dev.ovmusicplayer.ui.dashboard/-main-activity/index.html
+$dokka.location:com.dev.ovmusicplayer.ui.dashboard/MainActivity/MainActivity/#/PointingToDeclaration/app/com.dev.ovmusicplayer.ui.dashboard/-main-activity/-main-activity.html
+$dokka.location:com.dev.ovmusicplayer.ui.dashboard/MainActivity/binding/#/PointingToDeclaration/app/com.dev.ovmusicplayer.ui.dashboard/-main-activity/binding.html
+$dokka.location:com.dev.ovmusicplayer.ui.dashboard/MainActivity/details_animation/#/PointingToDeclaration/app/com.dev.ovmusicplayer.ui.dashboard/-main-activity/details_animation.html
+$dokka.location:com.dev.ovmusicplayer.ui.dashboard/MainActivity/mediaPlayer/#/PointingToDeclaration/app/com.dev.ovmusicplayer.ui.dashboard/-main-activity/media-player.html
+$dokka.location:com.dev.ovmusicplayer.ui.dashboard/MainActivity/navController/#/PointingToDeclaration/app/com.dev.ovmusicplayer.ui.dashboard/-main-activity/nav-controller.html
+$dokka.location:com.dev.ovmusicplayer.ui.dashboard/MainActivity/onCreateOptionsMenu/#android.view.Menu/PointingToDeclaration/app/com.dev.ovmusicplayer.ui.dashboard/-main-activity/on-create-options-menu.html
+$dokka.location:com.dev.ovmusicplayer.ui.dashboard/MainActivity/onOptionsItemSelected/#android.view.MenuItem/PointingToDeclaration/app/com.dev.ovmusicplayer.ui.dashboard/-main-activity/on-options-item-selected.html
+$dokka.location:com.dev.ovmusicplayer.ui.dashboard/MainActivity/run_saveSongsFromDb/#/PointingToDeclaration/app/com.dev.ovmusicplayer.ui.dashboard/-main-activity/run_save-songs-from-db.html
+$dokka.location:com.dev.ovmusicplayer.ui.dashboard/MainActivity/viewmodel/#/PointingToDeclaration/app/com.dev.ovmusicplayer.ui.dashboard/-main-activity/viewmodel.html
+$dokka.location:com.dev.ovmusicplayer.ui.dashboard/MainActivity_Viewmodel///PointingToDeclaration/app/com.dev.ovmusicplayer.ui.dashboard/-main-activity_-viewmodel/index.html
+$dokka.location:com.dev.ovmusicplayer.ui.dashboard/MainActivity_Viewmodel/MainActivity_Viewmodel/#com.dev.ovmusicplayer.repository.AddSongDetailRepository/PointingToDeclaration/app/com.dev.ovmusicplayer.ui.dashboard/-main-activity_-viewmodel/-main-activity_-viewmodel.html
+$dokka.location:com.dev.ovmusicplayer.ui.dashboard/MainActivity_Viewmodel/add/#/PointingToDeclaration/app/com.dev.ovmusicplayer.ui.dashboard/-main-activity_-viewmodel/add.html
+$dokka.location:com.dev.ovmusicplayer.ui.details////PointingToDeclaration/app/com.dev.ovmusicplayer.ui.details/index.html
+$dokka.location:com.dev.ovmusicplayer.ui.details/DetailsFragment///PointingToDeclaration/app/com.dev.ovmusicplayer.ui.details/-details-fragment/index.html
+$dokka.location:com.dev.ovmusicplayer.ui.details/DetailsFragment/DetailsFragment/#/PointingToDeclaration/app/com.dev.ovmusicplayer.ui.details/-details-fragment/-details-fragment.html
+$dokka.location:com.dev.ovmusicplayer.ui.details/DetailsFragment/binding/#/PointingToDeclaration/app/com.dev.ovmusicplayer.ui.details/-details-fragment/binding.html
+$dokka.location:com.dev.ovmusicplayer.ui.details/DetailsFragment/onCreateView/#android.view.LayoutInflater#android.view.ViewGroup?#android.os.Bundle?/PointingToDeclaration/app/com.dev.ovmusicplayer.ui.details/-details-fragment/on-create-view.html
+$dokka.location:com.dev.ovmusicplayer.ui.details/DetailsViewModel///PointingToDeclaration/app/com.dev.ovmusicplayer.ui.details/-details-view-model/index.html
+$dokka.location:com.dev.ovmusicplayer.ui.details/DetailsViewModel/DetailsViewModel/#/PointingToDeclaration/app/com.dev.ovmusicplayer.ui.details/-details-view-model/-details-view-model.html
+$dokka.location:com.dev.ovmusicplayer.ui.lyrics////PointingToDeclaration/app/com.dev.ovmusicplayer.ui.lyrics/index.html
+$dokka.location:com.dev.ovmusicplayer.ui.lyrics/LyricsFragment///PointingToDeclaration/app/com.dev.ovmusicplayer.ui.lyrics/-lyrics-fragment/index.html
+$dokka.location:com.dev.ovmusicplayer.ui.lyrics/LyricsFragment/LyricsFragment/#/PointingToDeclaration/app/com.dev.ovmusicplayer.ui.lyrics/-lyrics-fragment/-lyrics-fragment.html
+$dokka.location:com.dev.ovmusicplayer.ui.lyrics/LyricsFragment/binding/#/PointingToDeclaration/app/com.dev.ovmusicplayer.ui.lyrics/-lyrics-fragment/binding.html
+$dokka.location:com.dev.ovmusicplayer.ui.lyrics/LyricsFragment/onCreateView/#android.view.LayoutInflater#android.view.ViewGroup?#android.os.Bundle?/PointingToDeclaration/app/com.dev.ovmusicplayer.ui.lyrics/-lyrics-fragment/on-create-view.html
+$dokka.location:com.dev.ovmusicplayer.ui.lyrics/LyricsFragment/viewmodel/#/PointingToDeclaration/app/com.dev.ovmusicplayer.ui.lyrics/-lyrics-fragment/viewmodel.html
+$dokka.location:com.dev.ovmusicplayer.ui.lyrics/LyricsViewmodel///PointingToDeclaration/app/com.dev.ovmusicplayer.ui.lyrics/-lyrics-viewmodel/index.html
+$dokka.location:com.dev.ovmusicplayer.ui.lyrics/LyricsViewmodel/LyricsViewmodel/#/PointingToDeclaration/app/com.dev.ovmusicplayer.ui.lyrics/-lyrics-viewmodel/-lyrics-viewmodel.html
+$dokka.location:com.dev.ovmusicplayer.ui.lyrics/LyricsViewmodel/checkPermission/#android.app.Activity?/PointingToDeclaration/app/com.dev.ovmusicplayer.ui.lyrics/-lyrics-viewmodel/check-permission.html
+$dokka.location:com.dev.ovmusicplayer.ui.lyrics/LyricsViewmodel/getLyrics/#/PointingToDeclaration/app/com.dev.ovmusicplayer.ui.lyrics/-lyrics-viewmodel/get-lyrics.html
+$dokka.location:com.dev.ovmusicplayer.ui.lyrics/LyricsViewmodel/requestPermission/#android.app.Activity/PointingToDeclaration/app/com.dev.ovmusicplayer.ui.lyrics/-lyrics-viewmodel/request-permission.html
+$dokka.location:com.dev.ovmusicplayer.ui.playlist////PointingToDeclaration/app/com.dev.ovmusicplayer.ui.playlist/index.html
+$dokka.location:com.dev.ovmusicplayer.ui.playlist/PlayListFragment///PointingToDeclaration/app/com.dev.ovmusicplayer.ui.playlist/-play-list-fragment/index.html
+$dokka.location:com.dev.ovmusicplayer.ui.playlist/PlayListFragment/PlayListFragment/#/PointingToDeclaration/app/com.dev.ovmusicplayer.ui.playlist/-play-list-fragment/-play-list-fragment.html
+$dokka.location:com.dev.ovmusicplayer.ui.playlist/PlayListFragment/binding/#/PointingToDeclaration/app/com.dev.ovmusicplayer.ui.playlist/-play-list-fragment/binding.html
+$dokka.location:com.dev.ovmusicplayer.ui.playlist/PlayListFragment/onCreateView/#android.view.LayoutInflater#android.view.ViewGroup?#android.os.Bundle?/PointingToDeclaration/app/com.dev.ovmusicplayer.ui.playlist/-play-list-fragment/on-create-view.html
+$dokka.location:com.dev.ovmusicplayer.ui.playlist/PlayListFragment/viewModel/#/PointingToDeclaration/app/com.dev.ovmusicplayer.ui.playlist/-play-list-fragment/view-model.html
+$dokka.location:com.dev.ovmusicplayer.ui.playlist/PlayListViewModel///PointingToDeclaration/app/com.dev.ovmusicplayer.ui.playlist/-play-list-view-model/index.html
+$dokka.location:com.dev.ovmusicplayer.ui.playlist/PlayListViewModel/PlayListViewModel/#com.dev.ovmusicplayer.repository.PlayListRepository/PointingToDeclaration/app/com.dev.ovmusicplayer.ui.playlist/-play-list-view-model/-play-list-view-model.html
+$dokka.location:com.dev.ovmusicplayer.ui.playlist/PlayListViewModel/getPlayList/#/PointingToDeclaration/app/com.dev.ovmusicplayer.ui.playlist/-play-list-view-model/get-play-list.html
+$dokka.location:com.dev.ovmusicplayer.ui.playlist/PlayListViewModel/list/#/PointingToDeclaration/app/com.dev.ovmusicplayer.ui.playlist/-play-list-view-model/list.html
+$dokka.location:com.dev.ovmusicplayer.ui.playlist/PlayListViewModel/ovMedia/#/PointingToDeclaration/app/com.dev.ovmusicplayer.ui.playlist/-play-list-view-model/ov-media.html
+$dokka.location:com.dev.ovmusicplayer.ui.visualization////PointingToDeclaration/app/com.dev.ovmusicplayer.ui.visualization/index.html
+$dokka.location:com.dev.ovmusicplayer.ui.visualization/VisualizationFragment///PointingToDeclaration/app/com.dev.ovmusicplayer.ui.visualization/-visualization-fragment/index.html
+$dokka.location:com.dev.ovmusicplayer.ui.visualization/VisualizationFragment/VisualizationFragment/#/PointingToDeclaration/app/com.dev.ovmusicplayer.ui.visualization/-visualization-fragment/-visualization-fragment.html
+$dokka.location:com.dev.ovmusicplayer.ui.visualization/VisualizationFragment/binding/#/PointingToDeclaration/app/com.dev.ovmusicplayer.ui.visualization/-visualization-fragment/binding.html
+$dokka.location:com.dev.ovmusicplayer.ui.visualization/VisualizationFragment/onCreateView/#android.view.LayoutInflater#android.view.ViewGroup?#android.os.Bundle?/PointingToDeclaration/app/com.dev.ovmusicplayer.ui.visualization/-visualization-fragment/on-create-view.html
+$dokka.location:com.dev.ovmusicplayer.ui.visualization/VisualizationFragment/onDestroy/#/PointingToDeclaration/app/com.dev.ovmusicplayer.ui.visualization/-visualization-fragment/on-destroy.html
+$dokka.location:com.dev.ovmusicplayer.ui.visualization/VisualizationFragment/viewModel/#/PointingToDeclaration/app/com.dev.ovmusicplayer.ui.visualization/-visualization-fragment/view-model.html
+$dokka.location:com.dev.ovmusicplayer.ui.visualization/VisualizationViewModel///PointingToDeclaration/app/com.dev.ovmusicplayer.ui.visualization/-visualization-view-model/index.html
+$dokka.location:com.dev.ovmusicplayer.ui.visualization/VisualizationViewModel/VisualizationViewModel/#/PointingToDeclaration/app/com.dev.ovmusicplayer.ui.visualization/-visualization-view-model/-visualization-view-model.html
+$dokka.location:com.dev.ovmusicplayer.ui.visualization/VisualizationViewModel/checkPermission/#android.app.Activity?/PointingToDeclaration/app/com.dev.ovmusicplayer.ui.visualization/-visualization-view-model/check-permission.html
+$dokka.location:com.dev.ovmusicplayer.ui.visualization/VisualizationViewModel/requestPermission/#android.app.Activity?/PointingToDeclaration/app/com.dev.ovmusicplayer.ui.visualization/-visualization-view-model/request-permission.html
+$dokka.location:com.dev.ovmusicplayer.util////PointingToDeclaration/app/com.dev.ovmusicplayer.util/index.html
+$dokka.location:com.dev.ovmusicplayer.util/Animation///PointingToDeclaration/app/com.dev.ovmusicplayer.util/-animation/index.html
+$dokka.location:com.dev.ovmusicplayer.util/MediaPlayerMix.upd///PointingToDeclaration/app/com.dev.ovmusicplayer.util/-media-player-mix/upd/index.html
+$dokka.location:com.dev.ovmusicplayer.util/MediaPlayerMix.upd/seekBar/#/PointingToDeclaration/app/com.dev.ovmusicplayer.util/-media-player-mix/upd/seek-bar.html
+$dokka.location:com.dev.ovmusicplayer.util/MediaPlayerMix.upd/start_time/#/PointingToDeclaration/app/com.dev.ovmusicplayer.util/-media-player-mix/upd/start_time.html
+$dokka.location:com.dev.ovmusicplayer.util/MediaPlayerMix.upd/upd/#/PointingToDeclaration/app/com.dev.ovmusicplayer.util/-media-player-mix/upd/upd.html
+$dokka.location:com.dev.ovmusicplayer.util/MediaPlayerMix.upd/updateSongTime/#/PointingToDeclaration/app/com.dev.ovmusicplayer.util/-media-player-mix/upd/update-song-time.html
+$dokka.location:com.dev.ovmusicplayer.util/MediaPlayerMix///PointingToDeclaration/app/com.dev.ovmusicplayer.util/-media-player-mix/index.html
+$dokka.location:com.dev.ovmusicplayer.util/MediaPlayerMix/forward/#android.content.Context#android.widget.ImageView?/PointingToDeclaration/app/com.dev.ovmusicplayer.util/-media-player-mix/forward.html
+$dokka.location:com.dev.ovmusicplayer.util/MediaPlayerMix/mPlayer/#/PointingToDeclaration/app/com.dev.ovmusicplayer.util/-media-player-mix/m-player.html
+$dokka.location:com.dev.ovmusicplayer.util/MediaPlayerMix/pause/#android.widget.ImageView?#android.widget.ImageView?/PointingToDeclaration/app/com.dev.ovmusicplayer.util/-media-player-mix/pause.html
+$dokka.location:com.dev.ovmusicplayer.util/MediaPlayerMix/play/#android.widget.SeekBar?#android.widget.TextView?#android.widget.TextView?#android.widget.ImageView?#android.widget.ImageView?/PointingToDeclaration/app/com.dev.ovmusicplayer.util/-media-player-mix/play.html
+$dokka.location:com.dev.ovmusicplayer.util/MediaPlayerMix/rewind/#android.content.Context#android.widget.ImageView?/PointingToDeclaration/app/com.dev.ovmusicplayer.util/-media-player-mix/rewind.html
+$dokka.location:com.dev.ovmusicplayer.util/MediaPlayerMix/seekbar_progress/#android.content.Context#android.widget.SeekBar?/PointingToDeclaration/app/com.dev.ovmusicplayer.util/-media-player-mix/seekbar_progress.html
+$dokka.location:com.dev.ovmusicplayer.util/MediaPlayerMix/skip_back/#androidx.navigation.NavController/PointingToDeclaration/app/com.dev.ovmusicplayer.util/-media-player-mix/skip_back.html
+$dokka.location:com.dev.ovmusicplayer.util/MediaPlayerMix/skip_next/#androidx.navigation.NavController/PointingToDeclaration/app/com.dev.ovmusicplayer.util/-media-player-mix/skip_next.html
+$dokka.location:com.dev.ovmusicplayer.util/MediaPlayerMix/updateSeekBar/#android.widget.SeekBar?#android.widget.TextView?/PointingToDeclaration/app/com.dev.ovmusicplayer.util/-media-player-mix/update-seek-bar.html
+$dokka.location:com.dev.ovmusicplayer.util/MediaPlayerMix/updateSongTime/#android.widget.SeekBar?#android.widget.TextView?/PointingToDeclaration/app/com.dev.ovmusicplayer.util/-media-player-mix/update-song-time.html
+$dokka.location:com.dev.ovmusicplayer////PointingToDeclaration/app/com.dev.ovmusicplayer/index.html
+$dokka.location:com.dev.ovmusicplayer/MyApplication///PointingToDeclaration/app/com.dev.ovmusicplayer/-my-application/index.html
+$dokka.location:com.dev.ovmusicplayer/MyApplication/MyApplication/#/PointingToDeclaration/app/com.dev.ovmusicplayer/-my-application/-my-application.html
+com.dev.ovmusicplayer
+com.dev.ovmusicplayer.adapter
+com.dev.ovmusicplayer.db
+com.dev.ovmusicplayer.di
+com.dev.ovmusicplayer.model
+com.dev.ovmusicplayer.repository
+com.dev.ovmusicplayer.ui.dashboard
+com.dev.ovmusicplayer.ui.details
+com.dev.ovmusicplayer.ui.lyrics
+com.dev.ovmusicplayer.ui.playlist
+com.dev.ovmusicplayer.ui.visualization
+com.dev.ovmusicplayer.util
+
