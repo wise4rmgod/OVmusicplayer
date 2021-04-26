@@ -22,8 +22,8 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-      - name: GitHub Action for ktlint
-        uses: yutailang0119/action-ktlint@v1.0.0
+     # - name: GitHub Action for ktlint
+      #  uses: yutailang0119/action-ktlint@v1.0.0
 
        # Execute unit tests
       - name: Unit Test with Android Emulator Runner
