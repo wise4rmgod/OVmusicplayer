@@ -7,6 +7,15 @@ plugins {
     id 'dagger.hilt.android.plugin'
     id("io.gitlab.arturbosch.detekt").version("1.16.0")
     id "org.jlleitschuh.gradle.ktlint"
+    id "org.jetbrains.dokka"
+}
+
+dokkaHtml.configure {
+    dokkaSourceSets {
+        named("main") {
+            noAndroidSdkLink.set(false)
+        }
+    }
 }
 
 ktlint {
@@ -54,7 +63,7 @@ task jacocoTestReport(type: JacocoReport, dependsOn: ['testDebugUnitTest', 'crea
 detekt {
     buildUponDefaultConfig = true // preconfigure defaults
     allRules = false // activate all available (even unstable) rules.
-   // config = files("$projectDir/config/detekt.yml")
+    // config = files("$projectDir/config/detekt.yml")
     // point to your custom config defining rules to run, overwriting default behavior
 
     reports {

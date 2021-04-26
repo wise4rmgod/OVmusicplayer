@@ -1,34 +1,30 @@
 package com.dev.ovmusicplayer.ui.dashboard
 
-import android.content.res.ColorStateList
 import android.graphics.Color
-import android.graphics.drawable.Drawable
-import android.media.AudioAttributes
+import android.media.AudioManager
 import android.media.MediaPlayer
-import android.net.Uri
 import android.os.Bundle
-import android.os.Environment
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.SeekBar
+import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.net.toFile
-import androidx.core.net.toUri
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
 import com.dev.ovmusicplayer.R
 import com.dev.ovmusicplayer.databinding.ActivityMainBinding
 import com.dev.ovmusicplayer.util.MediaPlayerMix
 import dagger.hilt.android.AndroidEntryPoint
-import java.io.File
-import java.util.concurrent.TimeUnit
+import java.io.IOException
+
 
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
     var navController: NavController? = null
     val viewmodel: MainActivity_Viewmodel by viewModels()
+    var mediaPlayer: MediaPlayer? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -45,13 +41,14 @@ class MainActivity : AppCompatActivity() {
         MediaPlayerMix.mPlayer = MediaPlayer.create(this, R.raw.dmxslippin)
 
         binding.ovButtons.ovPlay.setOnClickListener {
-            MediaPlayerMix.play(
+            playAudio()
+         /**   MediaPlayerMix.play(
                 binding.ovButtons.ovSeekbar,
                 binding.ovButtons.ovStarttime,
                 binding.ovButtons.ovEndtime,
                 binding.ovButtons.ovPause,
                 binding.ovButtons.ovPlay
-            )
+            )  **/
 
         }
 
@@ -156,6 +153,31 @@ class MainActivity : AppCompatActivity() {
         MediaPlayerMix.mPlayer?.stop()
         MediaPlayerMix.mPlayer?.reset()
         MediaPlayerMix.mPlayer?.release()
+    }
+
+    private fun playAudio() {
+        val audioUrl = "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+
+        // initializing media player
+        mediaPlayer = MediaPlayer()
+
+        // below line is use to set the audio
+        // stream type for our media player.
+        mediaPlayer!!.setAudioStreamType(AudioManager.STREAM_MUSIC)
+
+        // below line is use to set our
+        // url to our media player.
+        try {
+            mediaPlayer?.setDataSource(audioUrl)
+            // below line is use to prepare
+            // and start our media player.
+            mediaPlayer?.prepare()
+            mediaPlayer?.start()
+        } catch (e: IOException) {
+            e.printStackTrace()
+        }
+        // below line is use to display a toast message.
+        Toast.makeText(this, "Audio started playing..", Toast.LENGTH_SHORT).show()
     }
 
 }
