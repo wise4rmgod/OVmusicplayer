@@ -14,6 +14,8 @@ import androidx.core.content.ContextCompat
 import androidx.fragment.app.FragmentActivity
 import androidx.fragment.app.viewModels
 import com.dev.ovmusicplayer.databinding.FragmentLyricsBinding
+import com.dev.ovmusicplayer.ui.dashboard.MainActivity
+import com.dev.ovmusicplayer.util.MediaPlayerMix
 import dagger.hilt.android.AndroidEntryPoint
 import java.io.File
 
@@ -34,6 +36,16 @@ class LyricsFragment : Fragment() {
 
         if (viewmodel.checkPermission(binding.root.context as Activity)) {
             binding.customLyricView.setLyricFile(viewmodel.getLyrics())
+        }
+
+        MediaPlayerMix.mPlayer?.currentPosition?.let {
+            binding.customLyricView.setCurrentTimeMillis(
+                it.toLong()
+            )
+        }
+
+        binding.customLyricView.setOnPlayerClickListener { progress, content ->
+
         }
 
         /**  if (checkPermission()) {

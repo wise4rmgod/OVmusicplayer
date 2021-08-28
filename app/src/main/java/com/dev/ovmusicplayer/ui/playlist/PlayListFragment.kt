@@ -46,5 +46,4 @@ class PlayListFragment : Fragment() {
         return binding.root
     }
 
-
 }

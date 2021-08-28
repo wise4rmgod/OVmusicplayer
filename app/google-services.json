@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "41810905634",
+    "firebase_url": "https://bitrisebugexample.firebaseio.com",
+    "project_id": "bitrisebugexample",
+    "storage_bucket": "bitrisebugexample.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:41810905634:android:c0bbd3c70204ea0111d87b",
+        "android_client_info": {
+          "package_name": "com.dev.bitrisebugexample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "41810905634-sg878so531obplil5e0edudkjbsb0tku.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXIjvLCu5YWTg09jgTvx-NE-KUZOUW0jc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "41810905634-sg878so531obplil5e0edudkjbsb0tku.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:41810905634:android:0c8106811e50619711d87b",
+        "android_client_info": {
+          "package_name": "com.dev.ovmusicplayer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "41810905634-sg878so531obplil5e0edudkjbsb0tku.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXIjvLCu5YWTg09jgTvx-NE-KUZOUW0jc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "41810905634-sg878so531obplil5e0edudkjbsb0tku.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:41810905634:android:01ca6391119d2c1811d87b",
+        "android_client_info": {
+          "package_name": "com.example.jetpackcomposenoteapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "41810905634-sg878so531obplil5e0edudkjbsb0tku.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXIjvLCu5YWTg09jgTvx-NE-KUZOUW0jc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "41810905634-sg878so531obplil5e0edudkjbsb0tku.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
